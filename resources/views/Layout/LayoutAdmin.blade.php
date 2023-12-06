@@ -11,13 +11,13 @@
     <title>Trang quản lý</title>
 
     <!-- Custom fonts for this template-->
-    <link href="{{ asset('../../../QlBanGiay/public/Admin/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet"
+    <link href="/Admin-rs/vendor/fontawesome-free/css/all.min.css" rel="stylesheet"
         type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
-    <link href="{{ asset('../../../QlBanGiay/public/Admin/css/sb-admin-2.min.css') }}" rel="stylesheet">
+    <link href="/Admin-rs/css/sb-admin-2.min.css" rel="stylesheet">
     <style>
     .group-product-roperties {
         display: flex;
@@ -114,14 +114,14 @@
         </div>
     </div>
     <!-- Bootstrap core JavaScript-->
-    <script src="../../../QlBanGiay/public/Admin/vendor/jquery/jquery.min.js"></script>
-    <script src="../../../QlBanGiay/public/Admin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/Admin-rs/vendor/jquery/jquery.min.js"></script>
+    <script src="/Admin-rs/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="../../../QlBanGiay/public/Admin/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="/Admin-rs/vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="../../../QlBanGiay/public/Admin/js/sb-admin-2.min.js"></script>
+    <script src="/Admin-rs/js/sb-admin-2.min.js"></script>
 </body>
 
 </html>

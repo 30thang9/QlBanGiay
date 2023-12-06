@@ -14,12 +14,12 @@
 
         <div class="flex-w flex-sb-m p-b-52">
             <div class="flex-w flex-l-m filter-tope-group m-tb-10">
-                <a href="{{ url('/QLBanGiay/home/') }}"
+                <a href="{{ url('/home/') }}"
                     class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5 how-active1" data-filter="*">
                     Tất cả sản phẩm
                 </a>
                 @foreach($nameProductTypes as $productType)
-                <a href="{{ url('/QLBanGiay/home/' . $productType->id ) }}"
+                <a href="{{ url('/home/' . $productType->id ) }}"
                     class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".women">
                     {{$productType->name}}
                 </a>
@@ -66,6 +66,7 @@
 
             <!-- Filter -->
             @include('layout.filter')
+
         </div>
 
         <div class="row isotope-gridd" id="isotope-grid">
@@ -102,6 +103,6 @@
 @endsection
 
 @section('foot-js')
-<!-- <script src="../../../QlBanGiay/resources/assets/vendor/jquery/jquery-3.2.1.min.js"></script> -->
-<script src="../../../QlBanGiay/resources/assets/js/filterapi.js"></script>
+<!-- <script src="/Web/vendor/jquery/jquery-3.2.1.min.js"></script> -->
+<script src="/Web/js/filterapi.js"></script>
 @endsection

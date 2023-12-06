@@ -10,15 +10,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Đặt lại mật khẩu</title>
-    <link rel="shortcut icon" href="./../../QlBanGiay/public/Login/images/favicon.ico" />
+    <link rel="shortcut icon" href="/Login-rs/images/favicon.ico" />
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="./../../QlBanGiay/public/Login/vendors/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./../../QlBanGiay/public/Login/vendors/jquery-ui/jquery-ui.min.css">
-    <link rel="stylesheet" href="./../../QlBanGiay/public/Login/vendors/jquery-ui/jquery-ui.theme.min.css">
-    <link rel="stylesheet" href="./../../QlBanGiay/public/Login/vendors/simple-line-icons/css/simple-line-icons.css">
-    <link rel="stylesheet" href="./../../QlBanGiay/public/Login/vendors/flags-icon/css/flag-icon.min.css">
-    <link rel="stylesheet" href="./../../QlBanGiay/public/Login/vendors/social-button/bootstrap-social.css" />
-    <link rel="stylesheet" href="./../../QlBanGiay/public/Login/css/main.css">
+    <link rel="stylesheet" href="/Login-rs/vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Login-rs/vendors/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="/Login-rs/vendors/jquery-ui/jquery-ui.theme.min.css">
+    <link rel="stylesheet" href="/Login-rs/vendors/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="/Login-rs/vendors/flags-icon/css/flag-icon.min.css">
+    <link rel="stylesheet" href="/Login-rs/vendors/social-button/bootstrap-social.css" />
+    <link rel="stylesheet" href="/Login-rs/css/main.css">
 
 </head>
 <!-- END Head-->
@@ -49,7 +49,7 @@
                     }
                     ?>
 
-                <form action="{{ URL::to('/QLBanGiay/admin/doi-mat-khau-reset') }}" method="post"
+                <form action="{{ URL::to('/admin/doi-mat-khau-reset') }}" method="post"
                     class="row row-eq-height lockscreen  mt-3 mb-5">
                     @csrf
                     <div class="lock-image col-12 col-sm-6"></div>
@@ -78,7 +78,7 @@
                             </button>
                         </div>
                         <p class="my-2 text-muted">--------------------------</p>
-                        <div class="mt-2"><a href="/QLBanGiay/admin/dang-nhap-he-thong">(Đăng nhập hệ thống)</a></div>
+                        <div class="mt-2"><a href="/admin/dang-nhap-he-thong">(Đăng nhập hệ thống)</a></div>
                     </div>
                 </form>
             </div>
@@ -88,11 +88,11 @@
     <!-- END: Content-->
 
     <!-- START: Template JS-->
-    <script src="./../../QlBanGiay/public/Login/vendors/jquery/jquery-3.3.1.min.js"></script>
-    <script src="./../../QlBanGiay/public/Login/vendors/jquery-ui/jquery-ui.min.js"></script>
-    <script src="./../../QlBanGiay/public/Login/vendors/moment/moment.js"></script>
-    <script src="./../../QlBanGiay/public/Login/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="./../../QlBanGiay/public/Login/vendors/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="/Login-rs/vendors/jquery/jquery-3.3.1.min.js"></script>
+    <script src="/Login-rs/vendors/jquery-ui/jquery-ui.min.js"></script>
+    <script src="/Login-rs/vendors/moment/moment.js"></script>
+    <script src="/Login-rs/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/Login-rs/vendors/slimscroll/jquery.slimscroll.min.js"></script>
 
     <!-- END: Template JS-->
     <!-- <script>

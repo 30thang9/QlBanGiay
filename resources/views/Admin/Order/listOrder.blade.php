@@ -29,7 +29,7 @@
                         <td>{{$listOder->address}}</td>
                         <td>{{$listOder->pay_method}}</td>
                         <td style="text-align: center;">
-                            <form method='post' action="{{ url('/QLBanGiay/admin/statusOrder/'.$listOder->id) }}">
+                            <form method='post' action="{{ url('/admin/statusOrder/'.$listOder->id) }}">
                                 @csrf
                                 @method('post')
                                 <button style="min-width: 130px; opacity: 1"
@@ -40,7 +40,7 @@
                             </form>
                         </td>
                         <td style="text-align: center;">
-                            <a href="{{ url('/QLBanGiay/printOrder/'.$listOder->id) }}"
+                            <a href="{{ url('/printOrder/'.$listOder->id) }}"
                                 style="min-width: 130px; opacity: 1; {{$listOder->status === 'Chờ xác nhận' ?'display: none' : ''}}"
                                 class=" btn btn-info">
                                 <i class="fas fa-download fa-sm text-white-50"></i>

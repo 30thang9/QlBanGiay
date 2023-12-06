@@ -57,7 +57,7 @@
                                 <td class="column-1">
                                     <div style=" width: 70px;" class="how-itemcart1">
                                         <img style="border: 1px solid #e6e6e6; height: 70px; width: 70px;"
-                                            src="../../../QlBanGiay/resources/assets/image/{{$orderDetail->avatar}}"
+                                            src="/Web/Image/{{$orderDetail->avatar}}"
                                             alt="IMG">
                                     </div>
                                 </td>
@@ -80,7 +80,7 @@
                                     {{number_format($orderDetail->price*$orderDetail->quantity , 0, ',', '.') . ' đ'}}
                                 </td>
                                 <td class="column-5">
-                                    <a href="{{ url('/QLBanGiay/review/' . $orderDetail->id ) }}" type="button"
+                                    <a href="{{ url('/review/' . $orderDetail->id ) }}" type="button"
                                         style="margin: 0 4px; color: #fff; cursor: pointer; {{$listOder->status === 'Đã xác nhận' ? '' : 'display: none'}}"
                                         class="btn btn-success">
                                         Đánh giá

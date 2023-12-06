@@ -36,14 +36,14 @@
 
                     <!-- Logo desktop -->
                     <a href="#" class="logo">
-                        <img src="../../../QlBanGiay/resources/assets/images/icons/logo-01.png" alt="IMG-LOGO">
+                        <img src="/Web/images/icons/logo-01.png" alt="IMG-LOGO">
                     </a>
 
                     <!-- Menu desktop -->
                     <div class="menu-desktop">
                         <ul class="main-menu">
                             <li class="active-menu">
-                                <a href="/QLBanGiay/home">Trang chủ</a>
+                                <a href="/home">Trang chủ</a>
                                 <!-- <ul class="sub-menu">
                                     <li><a href="index.html">Homepage 1</a></li>
                                     <li><a href="home-02.html">Homepage 2</a></li>
@@ -68,13 +68,13 @@
                     <!-- Icon header -->
                     <div class="wrap-icon-header flex-w flex-r-m">
                         @if($cartCount = Session::get('cartCount'))
-                        <a href="/QLBanGiay/cart"
+                        <a href="/cart"
                             class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart"
                             data-notify="{{$cartCount}}">
                             <i class="zmdi zmdi-shopping-cart"></i>
                         </a>
                         @else
-                        <a href="/QLBanGiay/cart"
+                        <a href="/cart"
                             class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart"
                             data-notify="0">
                             <i class="zmdi zmdi-shopping-cart"></i>
@@ -87,9 +87,9 @@
                                 <p>{{$user->name}}</p>
                                 <ul class="sub-menu">
                                     <li style="text-align:left"><a style="color: #555">Thông tin của tôi</a></li>
-                                    <li style="text-align:left"><a href="/QLBanGiay/directCard" style="color: #555">Đơn
+                                    <li style="text-align:left"><a href="/directCard" style="color: #555">Đơn
                                             đặt hàng</a></li>
-                                    <form method='post' action="{{ url('/QLBanGiay/login/logout-admin')}}">
+                                    <form method='post' action="{{ url('/login/logout-admin')}}">
                                         @csrf
                                         @method('post')
                                         <button style="text-align:left"><a style="color: #555">Đăng xuất</a></button>
@@ -97,7 +97,7 @@
                                 </ul>
                             </li>
                             @else
-                            <li style="text-align:left"><a href='/QLBanGiay/login/dang-nhap-he-thong'
+                            <li style="text-align:left"><a href='/login/dang-nhap-he-thong'
                                     style="color: #555">Đăng nhập</a></li>
                             @endif
                         </ul>
@@ -111,7 +111,7 @@
         <div class="wrap-header-mobile">
             <!-- Logo moblie -->
             <div class="logo-mobile">
-                <a href="index.html"><img src="../../../QlBanGiay/resources/assets/images/icons/logo-01.png"
+                <a href="index.html"><img src="/Web/images/icons/logo-01.png"
                         alt="IMG-LOGO"></a>
             </div>
 

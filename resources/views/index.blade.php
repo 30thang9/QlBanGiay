@@ -5,26 +5,26 @@
     <title>Home</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="../../../QlBanGiay/resources/assets/images/icons/favicon.png " />
-    <link rel="stylesheet" , href="../../../QlBanGiay/resources/assets/vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="icon" href="/Web/images/icons/favicon.png " />
+    <link rel="stylesheet" , href="/Web/vendor/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" ,
-        href="../../../QlBanGiay/resources/assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css" />
+        href="/Web/fonts/font-awesome-4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet"
-        href="../../../QlBanGiay/resources/assets/fonts/fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.min.css">
+        href="/Web/fonts/fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.min.css">
     <link rel="stylesheet" ,
-        href="../../../QlBanGiay/resources/assets/fonts/iconic/css/material-design-iconic-font.min.css" />
-    <link rel="stylesheet" , href="../../../QlBanGiay/resources/assets/fonts/linearicons-v1.0.0/icon-font.min.css" />
-    <link rel="stylesheet" , href="../../../QlBanGiay/resources/assets/vendor/animate/animate.css" />
-    <link rel="stylesheet" , href="../../../QlBanGiay/resources/assets/vendor/css-hamburgers/hamburgers.min.css" />
-    <link rel="stylesheet" , href="../../../QlBanGiay/resources/assets/vendor/animsition/css/animsition.min.css" />
-    <link rel="stylesheet" , href="../../../QlBanGiay/resources/assets/vendor/select2/select2.min.css" />
-    <link rel="stylesheet" , href="../../../QlBanGiay/resources/assets/vendor/daterangepicker/daterangepicker.css" />
-    <link rel="stylesheet" , href="../../../QlBanGiay/resources/assets/vendor/slick/slick.css" />
-    <link rel="stylesheet" , href="../../../QlBanGiay/resources/assets/vendor/MagnificPopup/magnific-popup.css" />
+        href="/Web/fonts/iconic/css/material-design-iconic-font.min.css" />
+    <link rel="stylesheet" , href="/Web/fonts/linearicons-v1.0.0/icon-font.min.css" />
+    <link rel="stylesheet" , href="/Web/vendor/animate/animate.css" />
+    <link rel="stylesheet" , href="/Web/vendor/css-hamburgers/hamburgers.min.css" />
+    <link rel="stylesheet" , href="/Web/vendor/animsition/css/animsition.min.css" />
+    <link rel="stylesheet" , href="/Web/vendor/select2/select2.min.css" />
+    <link rel="stylesheet" , href="/Web/vendor/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" , href="/Web/vendor/slick/slick.css" />
+    <link rel="stylesheet" , href="/Web/vendor/MagnificPopup/magnific-popup.css" />
     <link rel="stylesheet" ,
-        href="../../../QlBanGiay/resources/assets/vendor/perfect-scrollbar/perfect-scrollbar.css" />
-    <link rel="stylesheet" , href="../../../QlBanGiay/resources/assets/css/util.css" />
-    <link rel="stylesheet" , href="../../../QlBanGiay/resources/assets/css/main.css" />
+        href="/Web/vendor/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" , href="/Web/css/util.css" />
+    <link rel="stylesheet" , href="/Web/css/main.css" />
     <style>
     .size {
         display: flex;
@@ -252,7 +252,7 @@
         <div class="container">
             <div class="bg0 p-t-60 p-b-30 p-lr-15-lg how-pos3-parent">
                 <button class="how-pos3 hov3 trans-04 js-hide-modal1">
-                    <img src="../../../QlBanGiay/resources/assets/images/icons/icon-close.png" alt="CLOSE">
+                    <img src="/Web/images/icons/icon-close.png" alt="CLOSE">
                 </button>
 
                 <div class="row">
@@ -264,9 +264,9 @@
 
                                 <div class="slick3 gallery-lb">
                                     <div class="item-slick3"
-                                        data-thumb="../../../QlBanGiay/resources/assets/images/product-detail-01.jpg">
+                                        data-thumb="/Web/images/product-detail-01.jpg">
                                         <div class="wrap-pic-w pos-relative">
-                                            <img src="../../../QlBanGiay/resources/assets/images/product-detail-01.jpg"
+                                            <img src="/Web/images/product-detail-01.jpg"
                                                 alt="IMG-PRODUCT">
 
                                             <a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04"
@@ -277,9 +277,9 @@
                                     </div>
 
                                     <div class="item-slick3"
-                                        data-thumb="../../../QlBanGiay/resources/assets/images/product-detail-02.jpg">
+                                        data-thumb="/Web/images/product-detail-02.jpg">
                                         <div class="wrap-pic-w pos-relative">
-                                            <img src="../../../QlBanGiay/resources/assets/images/product-detail-02.jpg"
+                                            <img src="/Web/images/product-detail-02.jpg"
                                                 alt="IMG-PRODUCT">
 
                                             <a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04"
@@ -290,9 +290,9 @@
                                     </div>
 
                                     <div class="item-slick3"
-                                        data-thumb="../../../QlBanGiay/resources/assets/images/product-detail-03.jpg">
+                                        data-thumb="/Web/images/product-detail-03.jpg">
                                         <div class="wrap-pic-w pos-relative">
-                                            <img src="../../../QlBanGiay/resources/assets/images/product-detail-03.jpg"
+                                            <img src="/Web/images/product-detail-03.jpg"
                                                 alt="IMG-PRODUCT">
 
                                             <a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04"
@@ -419,14 +419,14 @@
 
 
     <!--===============================================================================================-->
-    <script src="../../../QlBanGiay/resources/assets/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="/Web/vendor/jquery/jquery-3.2.1.min.js"></script>
     <!--===============================================================================================-->
-    <script src="../../../QlBanGiay/resources/assets/vendor/animsition/js/animsition.min.js"></script>
+    <script src="/Web/vendor/animsition/js/animsition.min.js"></script>
     <!--===============================================================================================-->
-    <script src="../../../QlBanGiay/resources/assets/vendor/bootstrap/js/popper.js"></script>
-    <script src="../../../QlBanGiay/resources/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/Web/vendor/bootstrap/js/popper.js"></script>
+    <script src="/Web/vendor/bootstrap/js/bootstrap.min.js"></script>
     <!--===============================================================================================-->
-    <script src="../../../QlBanGiay/resources/assets/vendor/select2/select2.min.js"></script>
+    <script src="/Web/vendor/select2/select2.min.js"></script>
     <script>
     $(".js-select2").each(function() {
         $(this).select2({
@@ -436,18 +436,18 @@
     })
     </script>
     <!--===============================================================================================-->
-    <script src="../../../QlBanGiay/resources/assets/vendor/daterangepicker/moment.min.js"></script>
-    <script src="../../../QlBanGiay/resources/assets/vendor/daterangepicker/daterangepicker.js"></script>
+    <script src="/Web/vendor/daterangepicker/moment.min.js"></script>
+    <script src="/Web/vendor/daterangepicker/daterangepicker.js"></script>
     <!--===============================================================================================-->
-    <script src="../../../QlBanGiay/resources/assets/vendor/slick/slick.min.js"></script>
-    <script src="../../../QlBanGiay/resources/assets/js/slick-custom.js"></script>
+    <script src="/Web/vendor/slick/slick.min.js"></script>
+    <script src="/Web/js/slick-custom.js"></script>
     <!--===============================================================================================-->
-    <script src="../../../QlBanGiay/resources/assets/vendor/parallax100/parallax100.js"></script>
+    <script src="/Web/vendor/parallax100/parallax100.js"></script>
     <script>
     $('.parallax100').parallax100();
     </script>
     <!--===============================================================================================-->
-    <script src="../../../QlBanGiay/resources/assets/vendor/MagnificPopup/jquery.magnific-popup.min.js"></script>
+    <script src="/Web/vendor/MagnificPopup/jquery.magnific-popup.min.js"></script>
     <script>
     $('.gallery-lb').each(function() { // the containers for all your galleries
         $(this).magnificPopup({
@@ -461,9 +461,9 @@
     });
     </script>
     <!--===============================================================================================-->
-    <script src="../../../QlBanGiay/resources/assets/vendor/isotope/isotope.pkgd.min.js"></script>
+    <script src="/Web/vendor/isotope/isotope.pkgd.min.js"></script>
     <!--===============================================================================================-->
-    <script src="../../../QlBanGiay/resources/assets/vendor/sweetalert/sweetalert.min.js"></script>
+    <script src="/Web/vendor/sweetalert/sweetalert.min.js"></script>
     <script>
     $('.js-addwish-b2').on('click', function(e) {
         e.preventDefault();
@@ -500,7 +500,7 @@
     });
     </script>
     <!--===============================================================================================-->
-    <script src="../../../QlBanGiay/resources/assets/vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="/Web/vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
     <script>
     $('.js-pscroll').each(function() {
         $(this).css('position', 'relative');
@@ -517,8 +517,8 @@
     });
     </script>
     <!--===============================================================================================-->
-    <script src="../../../QlBanGiay/resources/assets/js/main.js"></script>
-    <script src="../../../QlBanGiay/resources/assets/js/filter.js"></script>
+    <script src="/Web/js/main.js"></script>
+    <script src="/Web/js/filter.js"></script>
     @yield('foot-js')
 </body>
 

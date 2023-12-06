@@ -138,7 +138,7 @@ class HomeController extends Controller
                 'reviews' => $reviewCount,
                 'total_reviews' => $TBRatingStar,
             ]);
-            return redirect()->route('QLBanGiay.directCard')->with('success', 'Đánh giá thành công');
+            return redirect()->route('directCard')->with('success', 'Đánh giá thành công');
         }
 
     }

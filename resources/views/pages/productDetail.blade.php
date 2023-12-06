@@ -24,7 +24,7 @@
 @if($productDetails)
 <section class="sec-product-detail bg0 p-t-65 p-b-60">
     <div class="container">
-        <form class="row" method="POST" action="{{ url('/QLBanGiay/addCart') }}" enctype="multipart/form-data">
+        <form class="row" method="POST" action="{{ url('/addCart') }}" enctype="multipart/form-data">
             @csrf
             <div class="col-md-6 col-lg-7 p-b-30">
                 <div class="p-l-25 p-r-30 p-lr-0-lg">
@@ -35,9 +35,9 @@
                         <div class="slick3 gallery-lb">
                             @foreach($productDetails->productImages as $productImage)
                             <div class="item-slick3"
-                                data-thumb="../../../QlBanGiay/resources/assets/image/{{$productImage->name}}">
+                                data-thumb="/Web/image/{{$productImage->name}}">
                                 <div class="wrap-pic-w pos-relative">
-                                    <img src="../../../QlBanGiay/resources/assets/image/{{$productImage->name}}"
+                                    <img src="/Web/image/{{$productImage->name}}"
                                         alt="IMG-PRODUCT">
 
                                     <a class="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04"
@@ -178,7 +178,7 @@
                                     @foreach($listReviews->reviews as $listReview)
                                     <div class="flex-w flex-t p-b-68">
                                         <div class="wrap-pic-s size-109 bor0 of-hidden m-r-18 m-t-6">
-                                            <img src="../../../QlBanGiay/resources/assets/images/avatar-01.jpg"
+                                            <img src="/Web/images/avatar-01.jpg"
                                                 alt="AVATAR">
                                         </div>
 
@@ -239,11 +239,11 @@
                     <div class="block2">
                         <div style="border: 1px solid #ccc" class="block2-pic hov-img0">
                             <img style="height: 270px"
-                                src="../../../QlBanGiay/resources/assets/image/{{$similarProduct->avatar}}"
+                                src="/Web/image/{{$similarProduct->avatar}}"
                                 alt="IMG-PRODUCT">
 
                             <a style="border: 1px solid #ccc; font-size: 13px;"
-                                href="{{ url('/QLBanGiay/' . $similarProduct->id . '/productDetail') }}" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 
+                                href="{{ url('/' . $similarProduct->id . '/productDetail') }}" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 
                             ">
                                 Chi tiết sản phẩm
                             </a>
@@ -271,10 +271,10 @@
                             <div class="block2-txt-child2 flex-r p-t-3">
                                 <a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
                                     <img class="icon-heart1 dis-block trans-04"
-                                        src="../../../QlBanGiay/resources/assets/images/icons/icon-heart-01.png"
+                                        src="/Web/images/icons/icon-heart-01.png"
                                         alt="ICON">
                                     <img class="icon-heart2 dis-block trans-04 ab-t-l"
-                                        src="../../../QlBanGiay/resources/assets/images/icons/icon-heart-02.png"
+                                        src="/Web/images/icons/icon-heart-02.png"
                                         alt="ICON">
                                 </a>
                             </div>

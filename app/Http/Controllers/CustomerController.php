@@ -82,9 +82,6 @@ class CustomerController extends Controller
                     ->select('users.name as Họ tên', 'users.email as Email', 'users.phone_number as Số điện thoại')
                     ->addSelect(DB::raw('COALESCE((SELECT SUM(price * quantity) FROM order_details INNER JOIN orders ON orders.id = order_details.order_id WHERE orders.customer_id = users.id), 0) as `Tổng tiền đã mua`'))
                     ->get();
-        
-        
-
 
             return view('Admin.Customer.listCustomer')
                 ->with('customers', $customers)
@@ -96,7 +93,7 @@ class CustomerController extends Controller
                 ->with('currentPrice', $currentPrice)
                 ->with('allCustomer', $allCustomer);
         }else{
-            return redirect()->route('QLBanGiay.login');
+            return redirect()->route('login');
         }
     }
     
@@ -120,17 +117,17 @@ class CustomerController extends Controller
     
                 $customer->save();
     
-                return redirect()->route('QLBanGiay.listCustomer')
+                return redirect()->route('listCustomer')
                     ->with('message', $message)
                     ->with('type', 'success');
             }
             
-            return redirect()->route('QLBanGiay.listCustomer')
+            return redirect()->route('listCustomer')
                 ->with('message', 'Tài khoản này không tồn tại')
                 ->with('type', 'error');
         }
         
-        return redirect()->route('QLBanGiay.login');
+        return redirect()->route('login');
     }    
 
     public function exportCustomers()

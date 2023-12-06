@@ -77,7 +77,7 @@
                         </td>
                         <td>
                             <form method='post'
-                                action="{{ url('/QLBanGiay/admin/customer/changeStatus/'.$customer->id) }}?action={{$customer->status == 'khoa' ? 'mo_khoa' : 'khoa'}}">
+                                action="{{ url('/admin/customer/changeStatus/'.$customer->id) }}?action={{$customer->status == 'khoa' ? 'mo_khoa' : 'khoa'}}">
                                 <!-- <form method='post' action="{{ url('/QLBanGiay/admin/customer/changeStatus/10') }}?action={{$customer->status == 'khoa' ? 'mo_khoa' : 'khoa'}}"> -->
                                 @csrf
                                 @if($customer->status == 'khoa')
@@ -148,12 +148,8 @@
 <script>
 Swal.fire({
     toast: true,
-    icon: '{{ session('
-    type ') ?? '
-    ' }}',
-    title: '{{ session('
-    message ') ?? '
-    ' }}',
+    icon: '{{ session('type') ?? '' }}',
+    title: '{{ session('message') ?? '' }}',
     animation: true,
     position: 'top-right',
     showConfirmButton: false,
@@ -162,21 +158,9 @@ Swal.fire({
     showCloseButton: true,
     customClass: {
         title: 'custom-title',
-        icon: '{{ session('
-        type ') === '
-        error ' ? '
-        custom - icon failed ' : '
-        custom - icon success ' }}',
-        popup: '{{ session('
-        type ') === '
-        error ' ? '
-        custom - popup failed ' : '
-        custom - popup success ' }}',
-        timerProgressBar: '{{ session('
-        type ') === '
-        error ' ? '
-        custom - progress - bar failed ' : '
-        custom - progress - bar success ' }}',
+        icon: '{{ session('type') === 'error' ? 'custom-icon failed' : 'custom-icon success' }}',
+        popup: '{{ session('type') === 'error' ? 'custom-popup failed' : 'custom-popup success' }}',
+        timerProgressBar: '{{ session('type') === 'error' ? 'custom-progress-bar failed' : 'custom-progress-bar success' }}',
     },
     didOpen: (toast) => {
         toast.addEventListener('mouseenter', Swal.stopTimer);
@@ -187,11 +171,11 @@ Swal.fire({
 
 @endif
 
-<script src="../../../QlBanGiay/public/Admin/vendor/linkPrint/jquery.js"></script>
-<script src="../../../QlBanGiay/public/Admin/vendor/linkPrint/filesaver.js"></script>
-<script src="../../../QlBanGiay/public/Admin/vendor/linkPrint/xlsx.js"></script>
-<script src="../../../QlBanGiay/public/Admin/vendor/linkPrint/bundle.js"></script>
-<script src="../../../QlBanGiay/public/Admin/vendor/linkPrint/print.js"></script>
+<script src="/Admin-rs/vendor/linkPrint/jquery.js"></script>
+<script src="/Admin-rs/vendor/linkPrint/filesaver.js"></script>
+<script src="/Admin-rs/vendor/linkPrint/xlsx.js"></script>
+<script src="/Admin-rs/vendor/linkPrint/bundle.js"></script>
+<script src="/Admin-rs/vendor/linkPrint/print.js"></script>
 
 <script>
 $(document).ready(function() {

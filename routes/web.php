@@ -12,7 +12,8 @@ use App\Http\Controllers\StatisticController;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\Api\ProductFilterApi;
 
-Route::prefix('QLBanGiay')->name("QLBanGiay.")->group(function() {
+// Route::prefix('QLBanGiay')->name("QLBanGiay.")->group(function() {
+    Route::get('', [HomeController::class, "products"]);
     Route::get('/home', [HomeController::class, "products"]);
     Route::get('/{id}/productDetail', [HomeController::class, "productDetail"]);
     Route::get('home/{id}', [HomeController::class, "productType"]);
@@ -64,6 +65,7 @@ Route::prefix('QLBanGiay')->name("QLBanGiay.")->group(function() {
     
     // api
     Route::get('/api/v1/product-filter', [ProductFilterApi::class, "productFilter"]);
+    Route::get('/api/v1/{id}/product-filter', [ProductFilterApi::class, "productTypeFilter"]);
     Route::get('/search', [HomeController::class, "productSearch"]);
     Route::get('/product-api', [HomeController::class, "productApi"]);
-});
+// });

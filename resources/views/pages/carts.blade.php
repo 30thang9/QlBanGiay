@@ -46,7 +46,7 @@
                                 <td class="column-1">
                                     <div style=" width: 70px;" class="how-itemcart1">
                                         <img style="border: 1px solid #e6e6e6; height: 70px; width: 70px;"
-                                            src="../../../QlBanGiay/resources/assets/image/{{$listCart->avatar}}"
+                                            src="/Web/Image/{{$listCart->avatar}}"
                                             alt="IMG">
                                     </div>
                                 </td>
@@ -83,18 +83,18 @@
                                 <td class="column-4 close-td" data-id="{{$listCart->id}}">
                                     @if($index === 0)
                                     <form method='POST' class="d-none" style="display:none;"
-                                        action="{{ url('/QLBanGiay/'.$listCart->id.'/deleteCart') }}">
+                                        action="{{ url('/'.$listCart->id.'/deleteCart') }}">
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" style="display:none;" class="close-icon">Xóa</button>
                                     </form>
-                                    <form method='POST' action="{{ url('/QLBanGiay/'.$listCart->id.'/deleteCart') }}">
+                                    <form method='POST' action="{{ url('/'.$listCart->id.'/deleteCart') }}">
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="close-icon">Xóa</button>
                                     </form>
                                     @else
-                                    <form method='POST' action="{{ url('/QLBanGiay/'.$listCart->id.'/deleteCart') }}">
+                                    <form method='POST' action="{{ url('/'.$listCart->id.'/deleteCart') }}">
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="close-icon">Xóa</button>
@@ -111,7 +111,7 @@
                         <div class="flex-w flex-m m-r-20 m-tb-5">
                             <div style="margin: 0 4px;"
                                 class="flex-c-m stext-101 cl2 size-118 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer m-tb-5">
-                                <a class="hover" style="color:#000" href="/QLBanGiay/orders">
+                                <a class="hover" style="color:#000" href="/orders">
                                     Đặt hàng
                                 </a>
                             </div>
@@ -130,7 +130,7 @@
                 <div style="display: flex; justify-content: center;">
                     <div style="text-align: center;">
                         <img style=" height: 200px; width: 200px;"
-                            src="../../../QlBanGiay/resources/assets/image/imgCart.png" alt="IMG">
+                            src="/Web/image/imgCart.png" alt="IMG">
                         <div>
                             <p style="
                                 text-align: center;
@@ -141,7 +141,7 @@
                             ">Chưa có sản phẩm nào được thêm vào giỏ hàng
                             </p>
                         </div>
-                        <a href="/QLBanGiay/home" class="btn btn-danger">Mua ngay</a>
+                        <a href="/home" class="btn btn-danger">Mua ngay</a>
                     </div>
                 </div>
                 @endif
@@ -165,7 +165,7 @@ function submitCartForm() {
         formData.append('quantity[]', quantity);
     });
 
-    var url = window.location.origin + "/QLBanGiay/updateCart";
+    var url = window.location.origin + "/updateCart";
     const csrfToken = "{{ csrf_token() }}";
 
     fetch(url, {

@@ -49,7 +49,7 @@ class ProductController extends Controller
             'design_id'=>$request->design_id,
             'gender_id'=>$request->gender_id,
         ]);
-        return redirect()->route('QLBanGiay.product');
+        return redirect()->route('product');
     }
     public function edit($id){
         if($id == null){
@@ -84,13 +84,14 @@ class ProductController extends Controller
         else{
             $filename = $product->avatar;
         }
+        // dd($request->all());
         $productUpdate =Product::find($id)->update([
             'name'=>$request->name,
             'import_price'=>$request->import_price,
             'export_price'=>$request->export_price,
             'discount'=>$request->discount,
             'avatar'=>$filename,
-            'desciption'=>$request->description,
+            'description'=>$request->description,
             'product_status'=>$request->product_status,
             'hot_status'=>$request->hot_status,
             'best_seller_status'=> $request->best_seller_status,
@@ -99,7 +100,7 @@ class ProductController extends Controller
             'design_id'=>$request->design_id,
             'gender_id'=>$request->gender_id,
         ]);
-        return Redirect()->route('QLBanGiay.product');
+        return Redirect()->route('product');
     }
 
     public function destroy($id){

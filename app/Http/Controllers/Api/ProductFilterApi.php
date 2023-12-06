@@ -64,6 +64,58 @@ class ProductFilterApi extends Controller
 
     }
 
+    public function productTypeFilter($id)
+    {
+        $filterString = request('filter');
+
+        $filterString = trim($filterString, '()');
+        $filterArray = explode(';', $filterString);
+        $query = Product::query();
+        $query->where('type_product_id',$id);
+        $this->handleFilter($filterArray, $query);
+        $query = $this->setSort($filterString, $query);
+        $count = $query->count();
+        $products = new ProductFilterDto();
+        $limit = $this->getLimitValue($filterString);
+        $offset = $this->getOffsetValue($filterString,$limit,$count);
+        if ($limit) {
+            $query->offset($offset)->limit($limit);
+            // dd();
+            $products->setCurrentPage((int)(($offset+1)/ $limit) + 1);
+            $products->setPageTotal((int)ceil($count / $limit));
+        }else{
+            $products->setCurrentPage(1);
+            $products->setPageTotal(1);
+        }
+
+        $filteredProducts = $query->get()->toArray();
+        $arrProducts = [];
+
+        foreach ($filteredProducts as $fp) {
+            $productRate = new ProductRateDto();
+            $ratingQuery = clone $query; // Clone the query to avoid modifying the original
+
+            $rating = Review::where('product_id', $fp['id'])->avg('rate');
+
+            $productRate->setProduct($fp);
+            
+            if ($rating) {
+                $formattedRating = round(floatval($rating), 1);
+                $productRate->setRating($formattedRating);
+            } else {
+                $productRate->setRating(0.0);
+            }
+            
+
+            $arrProducts[] = $productRate;
+        }
+
+        $products->setProducts($arrProducts);
+
+        return response()->json($products);
+
+    }
+
     private function handleFilter(array $filterArray, $query)
     {
         foreach ($filterArray as $filterItem) {
@@ -186,7 +238,7 @@ class ProductFilterApi extends Controller
                     if($limit){
                         if (is_numeric($value) && (int)$value == $value) {
                             $currentPage = (int)$value <= 0 ? 1 : (int)$value;
-                            $offset = $limit * ($currentPage - 1) - 1;
+                            $offset = $limit * ($currentPage - 1);
                             $offset  = $offset <= 0 ? 0 : $offset; 
                             // dd($offset);
                             break;

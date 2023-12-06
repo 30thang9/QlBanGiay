@@ -15,9 +15,9 @@
             <div class="form-group">
                 <label for="">Mô tả sản phẩm</label>
                 <textarea type="text" class="form-control" name="description" rows="5"
-                    placeholder="Nhập Mô tả sản phẩm"><?php echo htmlspecialchars($product->description); ?></textarea>
-                {{-- @if ($errors->has('desciption'))
-                    <p class="help is-danger">{{ $errors->first('desciption') }}</p>
+                    placeholder="Nhập Mô tả sản phẩm">{{$product->description}}</textarea>
+                {{-- @if ($errors->has('description'))
+                    <p class="help is-danger">{{ $errors->first('description') }}</p>
                 @endif --}}
             </div>
             <div class="group-product-roperties">
@@ -72,17 +72,26 @@
                     @endif --}}
                 </div>
             </div>
-            <div class="form-group col-md-3 uploadImage">
-                <br>
-                <label for="">Image</label>
-                <input type="file" class="form-control" name="avatar">
-                {{-- @if ($errors->has('avatar'))
-                <p class="help is-danger">{{ $errors->first('avatar') }}</p>
-                @endif --}}
+            <div class="row w-100 pt-2">
+                <div class="form-group col-12 col-md-6">
+                    <label for="avatar">Image</label>
+                    <input type="file" class="form-control" name="avatar" id="avatarInput">
+                    {{-- @if ($errors->has('avatar'))
+                    <p class="help is-danger">{{ $errors->first('avatar') }}</p>
+                    @endif --}}
+                </div>
+                <div class="col-12 col-md-6 d-flex justify-content-center">
+                    @if ($product->avatar)
+                        <img id="imagePreview" src="{{'/Web/Image/' . $product->avatar}}" alt="Product Image" style="max-width: 250px; height: auto; margin-top: 10px;">
+                    @else
+                        <p>No image available</p>
+                    @endif
+                </div>
             </div>
+
             <div class="form-group ">
                 <br>
-                <a href="{{url('QLBanGiay/admin/product')}}" class="btn btn-primary">Back</a>
+                <a href="{{url('/admin/product')}}" class="btn btn-primary">Back</a>
             </div>
         </div>
         <div class="col-md-3">
@@ -185,4 +194,25 @@
         </div>
     </div>
 </form>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('#avatarInput').change(function() {
+            var input = this;
+
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function(e) {
+                    $('#imagePreview').attr('src', e.target.result);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        });
+    });
+</script>
+
 @endsection

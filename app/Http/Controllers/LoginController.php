@@ -47,7 +47,7 @@ class LoginController extends Controller
                 'name' => $UserName,
             ]);
         }else{
-            return Redirect::to('QLBanGiay/login/dang-nhap-he-thong')->send();
+            return Redirect::to('/login/dang-nhap-he-thong')->send();
         }
     }
 
@@ -67,11 +67,11 @@ class LoginController extends Controller
                 'password' => $hashedPassword,
             ]);
             
-            return Redirect::to('QLBanGiay/login/dang-nhap-he-thong');
+            return Redirect::to('/login/dang-nhap-he-thong');
         
         } catch (\Exception $ex) {
             Session::put('message', $ex->getMessage());
-            return Redirect::to('QLBanGiay/admin/dat-lai-mat-khau?id_user=1');
+            return Redirect::to('/admin/dat-lai-mat-khau?id_user=1');
         }
     }
 
@@ -93,23 +93,23 @@ class LoginController extends Controller
                     Session::put(['user' => $lst]);
                     if ( password_verify($hashedPassword, $lst->password)) {
                         if($lst->role_id === 3 ){
-                            return Redirect::to('/QLBanGiay/home');
+                            return Redirect::to('/home');
                         }else{
-                            return Redirect::to('/QLBanGiay/admin/statisticAll');
+                            return Redirect::to('/admin/statisticAll');
                         }
                         
                     }else{
-                        return redirect()->route('QLBanGiay.login')->with('error', 'Mật khẩu không chính xác');
+                        return redirect()->route('login')->with('error', 'Mật khẩu không chính xác');
                     }
                 }else{
-                    return redirect()->route('QLBanGiay.login')->with('error', 'Tài khoản của bạn đã bị khóa');
+                    return redirect()->route('login')->with('error', 'Tài khoản của bạn đã bị khóa');
                 }
             } else {
-                return redirect()->route('QLBanGiay.login')->with('error', 'Tài khoản không chính xác');
+                return redirect()->route('login')->with('error', 'Tài khoản không chính xác');
             }
         } catch (\Exception $ex) {
             Session::put('message', $ex->getMessage());
-            return Redirect::to('/QLBanGiay/login/dang-nhap-he-thong');
+            return Redirect::to('/login/dang-nhap-he-thong');
         }
     }
 
@@ -119,7 +119,7 @@ class LoginController extends Controller
         try {
             // Xóa các all session 
             Session::flush();
-            return redirect()->route('QLBanGiay.login');
+            return redirect()->route('login');
         } catch (\Exception $ex) {
             return response()->json([
                 'status' => false,
@@ -156,7 +156,7 @@ class LoginController extends Controller
                 return  'Đã gửi yêu cầu đến gmail của bạn! Vui lòng kiểm tra gmail';
             } else {
                 Session::put('message', 'Email không tồn tại');
-                return Redirect::to('/QLBanGiay/login/khoi-phuc-mat-khau');
+                return Redirect::to('/login/khoi-phuc-mat-khau');
             }
         } catch (\Exception $ex) {
             // Log hoặc trả về thông báo lỗi
@@ -182,7 +182,7 @@ class LoginController extends Controller
                 'status'=> 'hoat dong',
                 'role_id' => 3
             ]);
-            return Redirect::to('/QLBanGiay/login/dang-nhap-he-thong')->send();
+            return Redirect::to('/login/dang-nhap-he-thong')->send();
         }    
         
         else{

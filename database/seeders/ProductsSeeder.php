@@ -17,6 +17,7 @@ class ProductsSeeder extends Seeder
         //
         \DB::table("products")->insert([
             ["name"=>"Nike Air Force 1 '07",
+            "description"=>null,
             "import_price"=>500000,
             "export_price"=>1200000,
             "discount"=>0.1,
@@ -30,6 +31,7 @@ class ProductsSeeder extends Seeder
             "gender_id"=>3,],
 
             ["name"=>"Nike Air Force 1 '07",
+            "description"=>null,
             "import_price"=>700000,
             "export_price"=>1500000,
             "discount"=>0.15,
@@ -44,6 +46,7 @@ class ProductsSeeder extends Seeder
 
 
             ["name"=>"Air Jordan 1 Mid SE Craft",
+            "description"=>null,
             "import_price"=>800000,
             "export_price"=>1600000,
             "discount"=>0.2,
@@ -57,6 +60,7 @@ class ProductsSeeder extends Seeder
             "gender_id"=>2],
 
             ["name"=>"Air Jordan 1 Mid SE Craft",
+            "description"=>null,
             "import_price"=>900000,
             "export_price"=>1750000,
             "discount"=>0.1,
@@ -70,6 +74,7 @@ class ProductsSeeder extends Seeder
             "gender_id"=>2],
 
             ["name"=>"Air Jordan 1 Elevate High",
+            "description"=>null,
             "import_price"=>300000,
             "export_price"=>700000,
             "discount"=>0.2,
@@ -83,6 +88,7 @@ class ProductsSeeder extends Seeder
             "gender_id"=>1],
 
             ["name"=>"Air Jordan 1 Elevate High",
+            "description"=>null,
             "import_price"=>400000,
             "export_price"=>800000,
             "discount"=>0.15,
@@ -96,6 +102,7 @@ class ProductsSeeder extends Seeder
             "gender_id"=>2],
             
             ["name"=>"Air Jordan 1 Zoom CMFT 2",
+            "description"=>null,
             "import_price"=>300000,
             "export_price"=>750000,
             "discount"=>0.3,
@@ -109,6 +116,7 @@ class ProductsSeeder extends Seeder
             "gender_id"=>2],
 
             ["name"=>"Air Jordan 1 Zoom CMFT 2",
+            "description"=>null,
             "import_price"=>400000,
             "export_price"=>900000,
             "discount"=>0.3,
@@ -122,6 +130,7 @@ class ProductsSeeder extends Seeder
             "gender_id"=>1],
 
             ["name"=>"Air Jordan 1 Low SE",
+            "description"=>null,
             "import_price"=>700000,
             "export_price"=>1800000,
             "discount"=>0.1,
@@ -135,6 +144,7 @@ class ProductsSeeder extends Seeder
             "gender_id"=>1],
 
             ["name"=>"Air Jordan 1 Low SE",
+            "description"=>null,
             "import_price"=>700000,
             "export_price"=>2000000,
             "discount"=>0.25,
@@ -150,6 +160,7 @@ class ProductsSeeder extends Seeder
             // 
 
             ["name"=>"air jordan-1 low se older shoes",
+            "description"=>null,
             "import_price"=>250000,
             "export_price"=>500000,
             "discount"=>0.15,
@@ -163,6 +174,7 @@ class ProductsSeeder extends Seeder
             "gender_id"=>1],
 
             ["name"=>"air jordan 1 low se shoes",
+            "description"=>null,
             "import_price"=>300000,
             "export_price"=>600000,
             "discount"=>0.1,
@@ -176,6 +188,7 @@ class ProductsSeeder extends Seeder
             "gender_id"=>2],
 
             ["name"=>"air jordan 1 mid shoes",
+            "description"=>null,
             "import_price"=>700000,
             "export_price"=>1500000,
             "discount"=>0.3,
@@ -189,6 +202,7 @@ class ProductsSeeder extends Seeder
             "gender_id"=>1],
 
             ["name"=>"air jordan legacy 312 low shoes",
+            "description"=>null,
             "import_price"=>700000,
             "export_price"=>1200000,
             "discount"=>0.3,
@@ -202,6 +216,7 @@ class ProductsSeeder extends Seeder
             "gender_id"=>2],
 
             ["name"=>"dunk low retro shoes",
+            "description"=>null,
             "import_price"=>500000,
             "export_price"=>1100000,
             "discount"=>0.3,
@@ -215,6 +230,7 @@ class ProductsSeeder extends Seeder
             "gender_id"=>1],
 
             ["name"=>"jordan one take 4 pf shoes",
+            "description"=>null,
             "import_price"=>700000,
             "export_price"=>1600000,
             "discount"=>0.3,
@@ -228,6 +244,7 @@ class ProductsSeeder extends Seeder
             "gender_id"=>2],
 
             ["name"=>"jordan one take 4 pf shoes-X",
+            "description"=>null,
             "import_price"=>700000,
             "export_price"=>1550000,
             "discount"=>0.3,
@@ -241,6 +258,7 @@ class ProductsSeeder extends Seeder
             "gender_id"=>1],
 
             ["name"=>"revolution 6 road running shoes-X",
+            "description"=>null,
             "import_price"=>300000,
             "export_price"=>1000000,
             "discount"=>0.3,
@@ -254,6 +272,7 @@ class ProductsSeeder extends Seeder
             "gender_id"=>2],
 
             ["name"=>"sabrina 1 ionicep basketball shoes",
+            "description"=>null,
             "import_price"=>700000,
             "export_price"=>1500000,
             "discount"=>0.3,
@@ -267,6 +286,7 @@ class ProductsSeeder extends Seeder
             "gender_id"=>1],
 
             ["name"=>"structure 25 road running shoes",
+            "description"=>null,
             "import_price"=>800000,
             "export_price"=>2200000,
             "discount"=>0.3,
@@ -280,6 +300,7 @@ class ProductsSeeder extends Seeder
             "gender_id"=>1],
 
             ["name"=>"tech hera shoes",
+            "description"=>null,
             "import_price"=>600000,
             "export_price"=>1200000,
             "discount"=>0.3,
@@ -293,6 +314,7 @@ class ProductsSeeder extends Seeder
             "gender_id"=>3],
 
             ["name"=>"tech hera shoes-X",
+            "description"=>null,
             "import_price"=>500000,
             "export_price"=>1000000,
             "discount"=>0.3,

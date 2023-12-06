@@ -33,7 +33,7 @@
                         <td style="display: flex" class="column-1">
                             <div style=" width: 70px; margin-right: 20px;" class="how-itemcart1">
                                 <img style="border: 1px solid #e6e6e6; height: 70px; width: 70px;"
-                                    src="../../../QlBanGiay/resources/assets/image/{{$orderDetail->avatar}}" alt="IMG">
+                                    src="/Web/Image/{{$orderDetail->avatar}}" alt="IMG">
                             </div>
                             <div>
                                 <p>

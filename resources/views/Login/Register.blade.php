@@ -8,15 +8,15 @@ use Illuminate\Support\Facades\Session;
 <head>
     <meta charset="UTF-8">
     <title>Đăng nhập hệ thống</title>
-    <link rel="shortcut icon" href="./../../QlBanGiay/public/Login/images/favicon.ico" />
+    <link rel="shortcut icon" href="/Login-rs/images/favicon.ico" />
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="./../../QlBanGiay/public/Login/vendors/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./../../QlBanGiay/public/Login/vendors/jquery-ui/jquery-ui.min.css">
-    <link rel="stylesheet" href="./../../QlBanGiay/public/Login/vendors/jquery-ui/jquery-ui.theme.min.css">
-    <link rel="stylesheet" href="./../../QlBanGiay/public/Login/vendors/simple-line-icons/css/simple-line-icons.css">
-    <link rel="stylesheet" href="./../../QlBanGiay/public/Login/vendors/flags-icon/css/flag-icon.min.css">
-    <link rel="stylesheet" href="./../../QlBanGiay/public/Login/vendors/social-button/bootstrap-social.css" />
-    <link rel="stylesheet" href="./../../QlBanGiay/public/Login/css/main.css">
+    <link rel="stylesheet" href="/Login-rs/vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Login-rs/vendors/jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="/Login-rs/vendors/jquery-ui/jquery-ui.theme.min.css">
+    <link rel="stylesheet" href="/Login-rs/vendors/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="/Login-rs/vendors/flags-icon/css/flag-icon.min.css">
+    <link rel="stylesheet" href="/Login-rs/vendors/social-button/bootstrap-social.css" />
+    <link rel="stylesheet" href="/Login-rs/css/main.css">
 </head>
 <!-- END Head-->
 
@@ -86,7 +86,7 @@ use Illuminate\Support\Facades\Session;
 
                         <div class="form-group mb-0 text-center">
                             <button class="btn btn-primary " type="submit"> Đăng Ký </button>
-                            <a class="btn btn-secondary" style="color: #fff" href="/QLBanGiay/login/dang-nhap-he-thong">
+                            <a class="btn btn-secondary" style="color: #fff" href="/login/dang-nhap-he-thong">
                                 Trở lại
                             </a>
                         </div>
@@ -99,11 +99,11 @@ use Illuminate\Support\Facades\Session;
     <!-- END: Content-->
 
     <!-- START: Template JS-->
-    <script src="./../../QlBanGiay/public/Login/vendors/jquery/jquery-3.3.1.min.js"></script>
-    <script src="./../../QlBanGiay/public/Login/vendors/jquery-ui/jquery-ui.min.js"></script>
-    <script src="./../../QlBanGiay/public/Login/vendors/moment/moment.js"></script>
-    <script src="./../../QlBanGiay/public/Login/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="./../../QlBanGiay/public/Login/vendors/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="/Login-rs/vendors/jquery/jquery-3.3.1.min.js"></script>
+    <script src="/Login-rs/vendors/jquery-ui/jquery-ui.min.js"></script>
+    <script src="/Login-rs/vendors/moment/moment.js"></script>
+    <script src="/Login-rs/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/Login-rs/vendors/slimscroll/jquery.slimscroll.min.js"></script>
 
     <!-- END: Template JS-->
 </body>

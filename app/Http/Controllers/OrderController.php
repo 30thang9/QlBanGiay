@@ -33,7 +33,7 @@ class OrderController extends Controller
                         ->with('delivers', $delivers)
                         ->with('listCarts', $listCarts);
                 }else{
-                        return redirect()->route('QLBanGiay.login');
+                        return redirect()->route('login');
                 }
         }
 
@@ -93,7 +93,7 @@ class OrderController extends Controller
                             }
                 }
                 
-                return redirect()->route('QLBanGiay.orders')->with('success', 'Đặt hàng thành công');
+                return redirect()->route('orders')->with('success', 'Đặt hàng thành công');
         }
 
         public function directCard(){
@@ -108,7 +108,7 @@ class OrderController extends Controller
                         return view('pages.directCard')
                         ->with('directCards', $directCards);
                 }else{
-                        return redirect()->route('QLBanGiay.login');
+                        return redirect()->route('login');
                 }
 
         }
@@ -118,9 +118,9 @@ class OrderController extends Controller
                 if($user){
                         $cancelOrderDetail = OrderDetail::where('order_id', $id)->delete();
                         $cancelOrder = Order::where('id', $id)->delete();
-                        return redirect()->route('QLBanGiay.directCard')->with('success', 'Hủy đơn hàng thành công');
+                        return redirect()->route('directCard')->with('success', 'Hủy đơn hàng thành công');
                 }else{
-                        return redirect()->route('QLBanGiay.login');
+                        return redirect()->route('login');
                 }
         }
 
@@ -168,7 +168,7 @@ class OrderController extends Controller
                         abort(404, 'Page not found');
                 }
 
-                return redirect()->route('QLBanGiay.listOrder')->with('success', 'Xác nhận đơn hàng thành công');
+                return redirect()->route('listOrder')->with('success', 'Xác nhận đơn hàng thành công');
         }
         
 }

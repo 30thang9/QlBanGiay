@@ -10,7 +10,7 @@
     <hr class="sidebar-divider my-0">
 
     <li class="nav-item">
-        <a class="nav-link" href="/QLBanGiay/admin/statisticAll">
+        <a class="nav-link" href="/admin/statisticAll">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>THỐNG KÊ</span></a>
     </li>
@@ -26,7 +26,7 @@
         </a>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <a class="collapse-item" href="/QLBanGiay/admin/product">Danh sách sản phẩm</a>
+                <a class="collapse-item" href="/admin/product">Danh sách sản phẩm</a>
             </div>
         </div>
     </li>
@@ -39,8 +39,8 @@
         </a>
         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <a class="collapse-item" href="/QLBanGiay/admin/listOrder">Danh sách đơn hàng</a>
-                <a class="collapse-item" href="/QLBanGiay/admin/listOrderDetail">Chi tiết đơn hàng</a>
+                <a class="collapse-item" href="/admin/listOrder">Danh sách đơn hàng</a>
+                <a class="collapse-item" href="/admin/listOrderDetail">Chi tiết đơn hàng</a>
             </div>
         </div>
     </li>
@@ -53,7 +53,7 @@
         </a>
         <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <a class="collapse-item" href="/QLBanGiay/admin/customer">Danh sách khách hàng</a>
+                <a class="collapse-item" href="/admin/customer">Danh sách khách hàng</a>
             </div>
         </div>
     </li>

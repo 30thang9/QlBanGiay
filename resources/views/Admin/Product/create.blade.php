@@ -1,6 +1,6 @@
 @extends('Layout.LayoutAdmin')
 @section('body')
-<form action="{{url('QLBanGiay/admin/product/create')}}" method="POST" role="form" enctype="multipart/form-data">
+<form action="{{url('/admin/product/create')}}" method="POST" role="form" enctype="multipart/form-data">
     @csrf
     <div class="row">
         <div class="col-md-9 content_left">
@@ -69,17 +69,21 @@
                     @endif --}}
                 </div>
             </div>
-            <div class="form-group col-md-3 uploadImage">
-                <br>
-                <label for="">Image</label>
-                <input type="file" class="form-control" placeholder="Chọn ảnh" name="avatar" id="avatar">
-                @if ($errors->has('avatar'))
-                <span class="text-danger">{{ $errors->first('avatar') }}</span>
-                @endif
+            <div class="row w-100 pt-2">
+                <div class="form-group col-12 col-md-6">
+                    <label for="avatar">Image</label>
+                    <input type="file" class="form-control" name="avatar" id="avatarInput">
+                    {{-- @if ($errors->has('avatar'))
+                    <p class="help is-danger">{{ $errors->first('avatar') }}</p>
+                    @endif --}}
+                </div>
+                <div class="col-12 col-md-6 d-flex justify-content-center">
+                    <img id="imagePreview" style="max-width: 250px; height: auto; margin-top: 10px;">
+                </div>
             </div>
             <div class="form-group ">
                 <br>
-                <a href="{{url('QLBanGiay/admin/product')}}" class="btn btn-primary">Back</a>
+                <a href="{{url('/admin/product')}}" class="btn btn-primary">Back</a>
             </div>
         </div>
         <div class="col-md-3">
@@ -112,7 +116,7 @@
                         Mở bán
                     </label>
                     <label>
-                        <input type="radio" name="product_status" value="0" checked>
+                        <input type="radio" name="product_status" value="0">
                         Ngừng bán
                     </label>
                 </div>
@@ -121,7 +125,7 @@
                 <label for="">Sản phẩm hot</label>
                 <div class="radio">
                     <label>
-                        <input type="radio" name="hot_status" value="1" checked>
+                        <input type="radio" name="hot_status" value="1">
                         Có
                     </label>
                     <label>
@@ -134,7 +138,7 @@
                 <label for="">Sản phẩm khuyến mãi</label>
                 <div class="radio">
                     <label>
-                        <input type="radio" name="best_seller_status" value="1" checked>
+                        <input type="radio" name="best_seller_status" value="1">
                         Có
                     </label>
                     <label>
@@ -147,4 +151,25 @@
         </div>
     </div>
 </form>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('#avatarInput').change(function() {
+            var input = this;
+
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function(e) {
+                    $('#imagePreview').attr('src', e.target.result);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        });
+    });
+</script>
+
 @stop

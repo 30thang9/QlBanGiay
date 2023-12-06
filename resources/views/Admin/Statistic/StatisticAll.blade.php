@@ -91,7 +91,7 @@
 
 <div class="card shadow mb-4">
     <div class="card-header py-3 ">
-        <form action="{{ url('/QLBanGiay/admin/statisticAll') }}" enctype="multipart/form-data">
+        <form action="{{ url('/admin/statisticAll') }}" enctype="multipart/form-data">
             @csrf
             <div class="card-body" style='display: flex; justify-content: space-between;'>
                 <div>

@@ -12,7 +12,7 @@ class Product extends Model
     use HasFactory;
     public $timestamps = false;
 
-    protected $fillable = ['id','name','import_price','object_id','exprot_price', 'discount' ,'avatar', 'product_status',
+    protected $fillable = ['id','name','description','import_price','object_id','exprot_price', 'discount' ,'avatar', 'product_status',
      'reviews', 'total_reviews', 'hot_status', 'best_seller_status', 'color_id', 'type_product_id','design_id','gender_id'];
 
     public function productDetails(): HasMany

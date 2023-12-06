@@ -17,7 +17,7 @@
 
 @if($listReviews)
 <!-- Shoping Cart -->
-<form class="bg0 p-t-75" method="POST" action="{{ url('/QLBanGiay/ratingStar') }}" enctype="multipart/form-data">
+<form class="bg0 p-t-75" method="POST" action="{{ url('/ratingStar') }}" enctype="multipart/form-data">
     @csrf
     <div class="container">
         <div class="row">
@@ -33,7 +33,7 @@
                             <tr class="table_row">
                                 <td class="column-1">
                                     <div class="how-itemcart1">
-                                        <img src="../../../QlBanGiay/resources/assets/image/{{$listReviews->avatar}}"
+                                        <img src="/Web/Image/{{$listReviews->avatar}}"
                                             alt="IMG">
                                     </div>
                                 </td>

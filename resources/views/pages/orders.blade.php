@@ -28,7 +28,7 @@
 
                 @endif
                 @if($listCarts->count() > 0)
-                <form class=" m-lr-0-xl" method="POST" action="{{ url('/QLBanGiay/addOrders') }}"
+                <form class=" m-lr-0-xl" method="POST" action="{{ url('/addOrders') }}"
                     enctype="multipart/form-data">
                     @csrf
                     @method('POST')
@@ -45,7 +45,7 @@
                             <tr class="table_row">
                                 <td class="column-1">
                                     <div class="how-itemcart1">
-                                        <img src="../../../QlBanGiay/resources/assets/image/{{$listCart->avatar}}"
+                                        <img src="/Web/Image/{{$listCart->avatar}}"
                                             alt="IMG">
                                     </div>
                                 </td>
@@ -148,7 +148,7 @@
                                 </button>
                                 <div style="margin: 0 4px;"
                                     class="flex-c-m stext-101 cl2 size-118 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer m-tb-5">
-                                    <a style="color:#000" class="hover" href="/QLBanGiay/cart">
+                                    <a style="color:#000" class="hover" href="/cart">
                                         Quay lại
                                     </a>
                                 </div>

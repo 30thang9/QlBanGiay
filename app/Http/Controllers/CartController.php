@@ -31,7 +31,7 @@ class CartController extends Controller
                         ->with('total', $total)
                         ->with('listCarts', $listCarts);
                 }else{
-                        return redirect()->route('QLBanGiay.login');
+                        return redirect()->route('login');
                 }
         }
 
@@ -70,9 +70,9 @@ class CartController extends Controller
                                         'customer_id' => $user->id,
                                 ]);
                         }
-                    return redirect()->route('QLBanGiay.cart');
+                    return redirect()->route('cart');
                 }else{
-                    return redirect()->route('QLBanGiay.login');
+                    return redirect()->route('login');
                 }
         }
 

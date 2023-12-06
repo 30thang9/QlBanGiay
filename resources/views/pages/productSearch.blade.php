@@ -14,12 +14,12 @@
 
         <div class="flex-w flex-sb-m p-b-52">
             <div class="flex-w flex-l-m filter-tope-group m-tb-10">
-                <a href="{{ url('/QLBanGiay/home/') }}"
+                <a href="{{ url('/home/') }}"
                     class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5 how-active1" data-filter="*">
                     Tất cả sản phẩm
                 </a>
                 @foreach($nameProductTypes as $productType)
-                <a href="{{ url('/QLBanGiay/home/' . $productType->id ) }}"
+                <a href="{{ url('/home/' . $productType->id ) }}"
                     class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5" data-filter=".women">
                     {{$productType->name}}
                 </a>
@@ -62,11 +62,11 @@
                 <!-- Block2 -->
                 <div class="block2">
                     <div style="border: 1px solid #ccc" class="block2-pic hov-img0">
-                        <img style="height: 270px" src="../../../QlBanGiay/resources/assets/image/{{$product->avatar}}"
+                        <img style="height: 270px" src="/Web/image/{{$product->avatar}}"
                             alt="IMG-PRODUCT">
 
                         <a style="border: 1px solid #ccc; font-size: 13px;"
-                            href="{{ url('/QLBanGiay/' . $product->id . '/productDetail') }}" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 
+                            href="{{ url('/' . $product->id . '/productDetail') }}" class="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 
                             ">
                             Chi tiết sản phẩm
                         </a>
@@ -94,9 +94,9 @@
                         <div class="block2-txt-child2 flex-r p-t-3">
                             <a href="#" class="btn-addwish-b2 dis-block pos-relative js-addwish-b2">
                                 <img class="icon-heart1 dis-block trans-04"
-                                    src="../../../QlBanGiay/resources/assets/images/icons/icon-heart-01.png" alt="ICON">
+                                    src="/Web/images/icons/icon-heart-01.png" alt="ICON">
                                 <img class="icon-heart2 dis-block trans-04 ab-t-l"
-                                    src="../../../QlBanGiay/resources/assets/images/icons/icon-heart-02.png" alt="ICON">
+                                    src="/Web/images/icons/icon-heart-02.png" alt="ICON">
                             </a>
                         </div>
                     </div>
